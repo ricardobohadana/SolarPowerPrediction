@@ -12,6 +12,7 @@ library(reshape2)
 library(quantmod)
 library(lubridate)
 library(caret)
+library(doParallel)
 cl <- makePSOCKcluster(5)
 registerDoParallel(cl)
 
@@ -249,6 +250,8 @@ test_data  <- anti_join(all_data, train_data, by="ROW")
 
 train_data <- drop_columns(train_data, "ROW")
 test_data <- drop_columns(test_data, "ROW")
+
+ggpairs(drop_columns(all_data, "ROW"))
 
 
 #### Rede Neural sem camadas escondidas ####
