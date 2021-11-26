@@ -16,4 +16,9 @@ Este modelo desenvolvido pode ser útil, especificamente na engenharia elétrica
 
 
 # Características
-Este modelo foi desenvolvido na linguagem R, utilizando redes neurais.
+Este modelo foi desenvolvido na linguagem de programação R utilizando alguns dos pacotes mais famosos do conjunto tidyverse.
+
+Foi feita uma comparação, tanto gráfica quanto métrica, da solução implementada com 3 modelos diferentes:
+  - Perceptron de Rosemblatt
+  - Perceptron de múltiplas camadas
+  - Máquina de vetor suporte
